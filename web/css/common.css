@@ -1,0 +1,22 @@
+.container{ width: 1440px; margin: 0 auto; }
+
+header{ height: 91px; width: 100%; background: #222831; color: #C1A57B; font-family: 'JejuMyeongjo';  }
+header.fixed{ position: fixed; top: 0; left: 0; z-index: 9999; }
+header .container{ padding-top: 25px; }
+header .container::after{ display: block; clear: both; content:""; }
+header .logo{ float: left; font-size: 20px; line-height: 1; margin-top: 10px; letter-spacing: 8px; }
+header nav{ float: right;}
+header nav ul::after{ display: block; clear: both; content:""; }
+header nav ul li{ float: left; }
+header nav ul li + li{ margin-left: 50px; }
+header nav ul li a{ display: block; color: #C1A57B; letter-spacing: 8px; text-align: center; line-height: 42px; height: 42px; border-radius: 21px; font-size: 14px; padding: 0 20px; }
+header nav ul li.on a{ color: #222831; background: #C1A57B; text-indent: 8px; }
+
+footer{ padding: 80px 0 75px; font-family: 'Roboto';  }
+footer .container::after{ display: block; clear: both; content:""; }
+footer article{ float: left; width: 275px; }
+footer article p{ font-weight: 700; line-height: 2.5; font-size: 12px; }
+footer article .tit{ font-weight: 900; line-height: 1.35; font-size: 14px; margin-bottom: 40px; }
+footer article.sns{ float: right; width: auto; margin-top: 43px; }
+footer article.sns a{ display: inline-block; }
+footer article.sns a + a{ margin-left: 40px; }
