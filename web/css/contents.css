@@ -14,6 +14,7 @@
 
 .cont-box{ padding: 0 20px; float: left; width: 100%; box-sizing: border-box; }
 .cont-box .cont-tit{ font-size: 24px; line-height: 1.5; font-weight: 900; border-bottom: 5px solid #1a1a1a; }
+.cont-box .cont-tit button{ float: right; line-height: 30px; font-size: 14px; border-radius: 15px; background: #c26215; text-align: center; font-weight: 900; color: #ffffff; padding: 0 25px; }
 .cont-box .txt{ font-size: 14px; line-height: 1.5; height: 42px; padding: 7px 0 4px; }
 .cont-box .txt span{ color: #ec6941 }
 
@@ -62,13 +63,23 @@
 .info-wrap .cont-tit{ margin-bottom: 20px; }
 .info-wrap .info-cont{ height: 304px; background: #ffffff; }
 
-.notice-wrap{ padding-top: 40px; }
+.notice-wrap{ padding-top: 40px; padding-bottom: 70px }
 .notice-wrap .cont-tit{ margin-bottom: 20px; }
 .notice-wrap table{ width: 100%; table-layout: fixed; margin-bottom: 15px; }
 .notice-wrap table th{ background: #59493f; font-weight: 700; font-size: 14px; color: #ffffff; text-align: center; height: 50px; vertical-align: middle; }
 .notice-wrap table td{ background: #ffffff; height: 50px; text-align: center; vertical-align: middle; font-size: 14px; }
+.notice-wrap table th:first-child,
+.notice-wrap table td:first-child{ width: 8%; }
+.notice-wrap table th:nth-child(2),
+.notice-wrap table td:nth-child(2){ width: 56%; }
+.notice-wrap table th:nth-child(3),
+.notice-wrap table td:nth-child(3){ width: 11%; }
+.notice-wrap table th:nth-child(4),
+.notice-wrap table td:nth-child(4){ width: 13%; }
+.notice-wrap table th:nth-child(5),
+.notice-wrap table td:nth-child(5){ width: 12%; }
 .notice-wrap table td.tit{ text-align:left; font-family: '굴림'; }
-.notice-wrap .paging{ text-align: center; padding-bottom: 26px; }
+.notice-wrap .paging{ text-align: center; }
 .notice-wrap .paging ul li{ display: inline-block; width: 25px; height: 25px; }
 .notice-wrap .paging ul li + li{ margin-left: -4px; }
 .notice-wrap .paging ul li a{ width: 25px; height: 25px; line-height: 25px; text-align: center; display: block; background: #fff; font-size: 12px; color: #313131; font-weight: 700; }
@@ -80,7 +91,7 @@
 @media all and (max-width: 1175px) {
     .calendar-wrap{ width: 100%; }
 
-    .study-wrap{ width: 100%; padding-top: 20px; }
+    .study-wrap{ width: 100%; padding-top: 40px; }
 
     .review-wrap{ width: 50%; }
     .review-wrap .review-list{ height: auto; }
@@ -95,7 +106,7 @@
 
     .review-wrap{ width: 100%; }
 
-    .info-wrap{ width: 100%; padding-top: 20px }
+    .info-wrap{ width: 100%; padding-top: 40px }
 }
 
 @media all and (max-width: 640px) {
@@ -105,37 +116,50 @@
     .util-wrap{ padding: 15px 15px; margin-bottom: 25px; }
     .util-wrap .profile{ width: 45px; height: 45px; }
     .util-wrap .user-data{ padding-left: 10px; }
-    .util-wrap .user-data p{ font-size: 12px; line-height: 20px; margin-bottom: 0; }
-    .util-wrap .user-data p span{ font-size: 20px; line-height: 20px; }
-    .util-wrap .user-data button{ line-height: 18px; font-size: 12px; padding: 0 15px; }
+    .util-wrap .user-data p{ font-size: 10px; line-height: 20px; margin-bottom: 0; }
+    .util-wrap .user-data p span{ font-size: 18px; line-height: 20px; }
+    .util-wrap .user-data button{ line-height: 20px; font-size: 10px; padding: 0 23px; }
     .util-wrap .btn-follow{ line-height: 28px; width: 140px; font-size: 12px; padding-left: 20px; }
     .util-wrap .btn-follow img{ left: 84px; width: 42px; }
 
-    .cont-box{ padding: 0 15px; }
+    .cont-box{ padding-left: 15px; padding-right: 15px; }
     .cont-box .cont-tit{ font-size: 20px; }
-    .cont-box .txt{ font-size: 12px; }
+    .cont-box .cont-tit button{ font-size: 12px; line-height: 25px; padding: 0 18px; }
+    .cont-box .txt{ font-size: 10px; }
 
-    .sel-wrap select{ background: #ffffff url('../images/icon_arrow_select.png') no-repeat 97% center; height: 35px; font-size: 12px; padding: 0 30px 0 12px; }
+    .sel-wrap select{ background: #ffffff url('../images/icon_arrow_select.png') no-repeat 97% center; height: 35px; font-size: 10px; padding: 0 30px 0 12px; }
     .sel-wrap select:first-child{ width: 100%; }
     .sel-wrap select:last-child{ width: 100%; margin-top: 10px; margin-left: 0; }
 
     .calendar-wrap table td, 
-    .calendar-wrap table th{ font-size: 12px; }
+    .calendar-wrap table th{ font-size: 10px; }
     .calendar-wrap table th{ height: 30px; }
     .calendar-wrap table td{ padding: 5px; }
-    .calendar-wrap table td .date{ font-size: 12px; }
-    .calendar-wrap table td .date span{ margin-left: 5px; }
-    .calendar-wrap table td .time{ margin-top: 0; }
+    .calendar-wrap table td .date{ font-size: 10px; }
+    .calendar-wrap table td .date span{ margin-left: 5px; font-size: 10px; }
+    .calendar-wrap table td .time{ margin-top: 0; font-size: 10px; }
     .calendar-wrap table td .time br{display: block;}
-    .calendar-wrap table td .name{ margin-top: 0; }
-    .calendar-wrap table td .defer{ font-size: 10px; }
+    .calendar-wrap table td .name{ margin-top: 0; font-size: 10px; }
+    .calendar-wrap table td .defer{ font-size: 10px; font-size: 10px; }
     
-    .review-wrap table th{ font-size:12px; height: 35px; }
-    .review-wrap table td{ font-size: 12px; height: 45px; }
+    
 
-    .info-wrap{ padding-top: 20px; }
+    .review-wrap table th{ font-size:10px; height: 35px; }
+    .review-wrap table td{ font-size: 10px; height: 45px; }
 
-    .notice-wrap{ padding-top: 20px; }
-    .notice-wrap table th{ font-size: 12px; height: 35px; }
-    .notice-wrap table td{ font-size: 12px; height: 45px; }
+    
+
+    .notice-wrap{ padding-bottom: 50px; }
+    .notice-wrap table th{ font-size: 10px; height: 35px; }
+    .notice-wrap table td{ font-size: 10px; height: 45px; }
+    .notice-wrap table th:first-child,
+    .notice-wrap table td:first-child{ width: 40px; }
+    .notice-wrap table th:nth-child(2),
+    .notice-wrap table td:nth-child(2){ width: calc(100% - 195px); }
+    .notice-wrap table th:nth-child(3),
+    .notice-wrap table td:nth-child(3){ width: 50px; }
+    .notice-wrap table th:nth-child(4),
+    .notice-wrap table td:nth-child(4){ width: 60px; }
+    .notice-wrap table th:nth-child(5),
+    .notice-wrap table td:nth-child(5){ width: 45px; }
 }
