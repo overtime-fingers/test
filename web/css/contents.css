@@ -1,0 +1,130 @@
+.logo{ text-align: center; padding: 30px 0 20px; }
+
+.contents{ width: 100%; max-width: 1175px; margin: 0 auto; }
+
+.util-wrap{ background: #ffffff; padding: 15px 40px; box-sizing: border-box; margin-bottom: 35px; }
+.util-wrap::after{ display: block; clear: both; content:""; }
+.util-wrap .profile{ float: left; width: 60px; height: 60px; background: #3c270f url('../images/img_profile_default.png') no-repeat center bottom; border-radius: 50%; background-size: 100%; }
+.util-wrap .user-data{ float: left; padding-left: 25px; }
+.util-wrap .user-data p{ padding-left: 5px; font-weight: 900; font-size: 14px; line-height: 28px; margin-bottom: 2px; }
+.util-wrap .user-data p span{ font-size: 24px; line-height: 28px; }
+.util-wrap .user-data button{ line-height: 25px; text-align: center; color: #ffffff; font-size: 12px; background: #b3b3b3; padding: 0 21px; border-radius: 12px; font-weight: 900; }
+.util-wrap .btn-follow{ float: right; position: relative; line-height: 46px; width: 200px; box-sizing: border-box; border: 2px solid #c26215; color: #c26215; font-weight: 900; font-size: 15px; padding-left: 30px; text-align: left; border-radius: 23px; margin-top: 7px; }
+.util-wrap .btn-follow img{ position: absolute; left: 113px; bottom: 0; }
+
+.cont-box{ padding: 0 20px; float: left; width: 100%; box-sizing: border-box; }
+.cont-box .cont-tit{ font-size: 24px; line-height: 1.5; font-weight: 900; border-bottom: 5px solid #1a1a1a; }
+.cont-box .txt{ font-size: 14px; line-height: 1.5; height: 42px; padding: 7px 0 4px; }
+.cont-box .txt span{ color: #ec6941 }
+
+.sel-wrap{ margin-bottom: 10px; }
+.sel-wrap::after{ display: block; clear: both; content:""; }
+.sel-wrap select{ float: left; background: #ffffff url('../images/icon_arrow_select.png') no-repeat 95% center; height: 40px; font-size: 14px; padding: 0 43px 0 20px; }
+.sel-wrap select:first-child{ width: calc(65.7% - 10px); }
+.sel-wrap select:last-child{ width: calc(34.3% - 10px); margin-left: 20px; }
+
+.calendar-wrap{ float: left; width: 63%; }
+.calendar-wrap table{ width: 100%; table-layout: fixed; }
+.calendar-wrap table td,
+.calendar-wrap table th{ border: 1px solid #d2d2d2; font-size: 14px; }
+.calendar-wrap table th{ background: #434343; text-align: center; font-weight: 700; color: #ffffff; height: 38px; vertical-align: middle; }
+.calendar-wrap table th:first-child{ color: #ec6941; }
+.calendar-wrap table th:last-child{ color: #448aca; }
+.calendar-wrap table td{ height: 99px; background: #ffffff; padding: 10px; box-sizing: border-box; font-family: '굴림'; }
+.calendar-wrap table td .date{ font-size: 14px; }
+.calendar-wrap table td:first-child .date,
+.calendar-wrap table td.red .date{ color: #ec6941; }
+.calendar-wrap table td:last-child .date{ color: #448aca; }
+
+.study-wrap{ float: left; width: 37%; }
+
+.review-wrap table{ width: 100%; table-layout: fixed; margin-bottom: 15px; }
+.review-wrap table th{ background: #59493f; font-weight: 700; font-size: 14px; color: #ffffff; text-align: center; height: 50px; vertical-align: middle; }
+.review-wrap table td{ background: #ffffff; height: 50px; text-align: center; vertical-align: middle; font-size: 14px; }
+.review-wrap table td .comment{ width: 24px; height: 24px; background: url('../images/btn_comment.png') no-repeat center; background-size: 20px }
+.review-wrap table td .recording{ width: 24px; height: 24px; background: url('../images/btn_recording.png') no-repeat center; background-size: 20px; }
+.review-wrap tbody tr{ border: 1px solid #eeeeee; border-left: 0; border-right: 0; }
+.review-wrap .paging{ text-align: center; padding-bottom: 26px; }
+.review-wrap .paging ul li{ display: inline-block; width: 25px; height: 25px; }
+.review-wrap .paging ul li + li{ margin-left: -4px; }
+.review-wrap .paging ul li a{ width: 25px; height: 25px; line-height: 25px; text-align: center; display: block; background: #fff; font-size: 12px; color: #313131; font-weight: 700; }
+.review-wrap .paging ul li.prev a,
+.review-wrap .paging ul li.next a{ text-indent: -99999px; }
+.review-wrap .paging ul li.prev a{ background: #ffffff url('../images/icon_paging_prev.png') no-repeat center; }
+.review-wrap .paging ul li.next a{ background: #ffffff url('../images/icon_paging_next.png') no-repeat center; }
+.review-wrap .review-list{ height: 320px; }
+
+.info-wrap .cont-tit{ margin-bottom: 20px; }
+.info-wrap .info-cont{ height: 304px; background: #ffffff; }
+
+.notice-wrap{ padding-top: 40px; }
+.notice-wrap .cont-tit{ margin-bottom: 20px; }
+.notice-wrap table{ width: 100%; table-layout: fixed; margin-bottom: 15px; }
+.notice-wrap table th{ background: #59493f; font-weight: 700; font-size: 14px; color: #ffffff; text-align: center; height: 50px; vertical-align: middle; }
+.notice-wrap table td{ background: #ffffff; height: 50px; text-align: center; vertical-align: middle; font-size: 14px; }
+.notice-wrap table td.tit{ text-align:left; font-family: '굴림'; }
+.notice-wrap .paging{ text-align: center; padding-bottom: 26px; }
+.notice-wrap .paging ul li{ display: inline-block; width: 25px; height: 25px; }
+.notice-wrap .paging ul li + li{ margin-left: -4px; }
+.notice-wrap .paging ul li a{ width: 25px; height: 25px; line-height: 25px; text-align: center; display: block; background: #fff; font-size: 12px; color: #313131; font-weight: 700; }
+.notice-wrap .paging ul li.prev a,
+.notice-wrap .paging ul li.next a{ text-indent: -99999px; }
+.notice-wrap .paging ul li.prev a{ background: #ffffff url('../images/icon_paging_prev.png') no-repeat center; }
+.notice-wrap .paging ul li.next a{ background: #ffffff url('../images/icon_paging_next.png') no-repeat center; }
+
+@media all and (max-width: 1175px) {
+    .calendar-wrap{ width: 100%; }
+
+    .study-wrap{ width: 100%; padding-top: 20px; }
+
+    .review-wrap{ width: 50%; }
+    .review-wrap .review-list{ height: auto; }
+    .review-wrap .paging{ padding-bottom: 0; }
+
+    .info-wrap{ width: 50%; }
+    .info-wrap .info-cont{ height: 326px; }
+}
+
+@media all and (max-width: 860px) {
+    .cont-box .txt{ height: auto; }
+
+    .review-wrap{ width: 100%; }
+
+    .info-wrap{ width: 100%; padding-top: 20px }
+}
+
+@media all and (max-width: 640px) {
+    .logo{ padding: 10px 0 15px; }
+    .logo img{ width: 150px; height: 35px; }
+
+    .util-wrap{ padding: 15px 15px; margin-bottom: 25px; }
+    .util-wrap .profile{ width: 45px; height: 45px; }
+    .util-wrap .user-data{ padding-left: 10px; }
+    .util-wrap .user-data p{ font-size: 12px; line-height: 20px; margin-bottom: 0; }
+    .util-wrap .user-data p span{ font-size: 20px; line-height: 20px; }
+    .util-wrap .user-data button{ line-height: 18px; font-size: 12px; padding: 0 15px; }
+    .util-wrap .btn-follow{ line-height: 28px; width: 140px; font-size: 12px; padding-left: 20px; }
+    .util-wrap .btn-follow img{ left: 84px; width: 42px; }
+
+    .cont-box{ padding: 0 15px; }
+    .cont-box .cont-tit{ font-size: 20px; }
+    .cont-box .txt{ font-size: 12px; }
+
+    .sel-wrap select:first-child{ width: 100%; }
+    .sel-wrap select:last-child{ width: 100%; margin-top: 10px; margin-left: 0; }
+
+    .calendar-wrap table td, 
+    .calendar-wrap table th{ font-size: 12px; }
+    .calendar-wrap table th{ height: 30px; }
+    .calendar-wrap table td{ padding: 5px; }
+    .calendar-wrap table td .date{ font-size: 12px; }
+    
+    .review-wrap table th{ font-size:12px; height: 35px; }
+    .review-wrap table td{ font-size: 12px; height: 45px; }
+
+    .info-wrap{ padding-top: 20px; }
+
+    .notice-wrap{ padding-top: 20px; }
+    .notice-wrap table th{ font-size: 12px; height: 35px; }
+    .notice-wrap table td{ font-size: 12px; height: 45px; }
+}
