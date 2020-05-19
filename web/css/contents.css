@@ -37,7 +37,7 @@
 .calendar-wrap table td .time{ font-size: 12px; color: #434343; font-weight: 700; margin-top: 9px; }
 .calendar-wrap table td .time br{display: none;}
 .calendar-wrap table td .name{ color: #f19149; font-family: '굴림'; margin-top: 9px; }
-.calendar-wrap table td .defer{ position: absolute; display: block; bottom: 5px; width: calc(100% - 10px); left: 5px; font-size: 12px; font-weight: 700; text-align: center; line-height: 21px; border-radius: 10px; color: #ec6941; background: #f3c39d;  }
+.calendar-wrap table td .defer{ position: absolute; display: block; bottom: 5px; width: calc(100% - 10px); left: 50%; transform: translateX(-50%); font-size: 12px; font-weight: 700; text-align: center; padding: 3px 0 2px; border-radius: 10px; color: #ec6941; background: #f3c39d;  }
 .calendar-wrap table td:first-child .date,
 .calendar-wrap table td.red .date{ color: #ec6941; }
 .calendar-wrap table td:last-child .date{ color: #448aca; }
@@ -122,7 +122,7 @@
     .util-wrap .btn-follow{ line-height: 28px; width: 140px; font-size: 12px; padding-left: 20px; }
     .util-wrap .btn-follow img{ left: 84px; width: 42px; }
 
-    .cont-box{ padding-left: 15px; padding-right: 15px; }
+    .cont-box{ padding-left: 10px; padding-right: 10px; }
     .cont-box .cont-tit{ font-size: 20px; }
     .cont-box .cont-tit button{ font-size: 12px; line-height: 25px; padding: 0 18px; }
     .cont-box .txt{ font-size: 10px; }
@@ -140,7 +140,7 @@
     .calendar-wrap table td .time{ margin-top: 0; font-size: 10px; }
     .calendar-wrap table td .time br{display: block;}
     .calendar-wrap table td .name{ margin-top: 0; font-size: 10px; }
-    .calendar-wrap table td .defer{ font-size: 10px; font-size: 10px; }
+    .calendar-wrap table td .defer{ font-size: 10px; width: calc(100% - 2px); }
     
     .review-wrap table th{ font-size:10px; height: 35px; }
     .review-wrap table td{ font-size: 10px; height: 45px; }
