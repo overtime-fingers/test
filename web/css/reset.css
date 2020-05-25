@@ -246,6 +246,9 @@ input[type="radio"] {
     padding: 0; /* 2 */
     *height: 13px; /* 3 */
     *width: 13px; /* 3 */
+    width: 0;
+    height: 0;
+    opacity: 0;
 }
 
 input[type="search"] {
