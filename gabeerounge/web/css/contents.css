@@ -97,8 +97,9 @@
 .review-wrap tbody tr{ border: 1px solid #eeeeee; border-left: 0; border-right: 0; }
 .review-wrap .paging{ text-align: center; padding-bottom: 26px; }
 .review-wrap .paging ul li{ display: inline-block; width: 25px; height: 25px; }
-.review-wrap .paging ul li + li{ margin-left: -4px; }
+.review-wrap .paging ul li + li{ margin-left: -4px; border-left: 2px solid #eeeeee }
 .review-wrap .paging ul li a{ width: 25px; height: 25px; line-height: 25px; text-align: center; display: block; background: #fff; font-size: 12px; color: #313131; font-weight: 700; }
+.review-wrap .paging ul li.on a{ background: #000000; color: #ffffff; }
 .review-wrap .paging ul li.prev a,
 .review-wrap .paging ul li.next a{ text-indent: -99999px; }
 .review-wrap .paging ul li.prev a{ background: #ffffff url('../images/icon_paging_prev.png') no-repeat center; }
@@ -126,8 +127,9 @@
 .notice-wrap table td.tit{ text-align:left; font-family: '굴림'; }
 .notice-wrap .paging{ text-align: center; }
 .notice-wrap .paging ul li{ display: inline-block; width: 25px; height: 25px; }
-.notice-wrap .paging ul li + li{ margin-left: -4px; }
+.notice-wrap .paging ul li + li{ margin-left: -4px; border-left: 2px solid #eeeeee }
 .notice-wrap .paging ul li a{ width: 25px; height: 25px; line-height: 25px; text-align: center; display: block; background: #fff; font-size: 14px; color: #313131; font-weight: 700; }
+.notice-wrap .paging ul li.on a{ background: #000000; color: #ffffff; }
 .notice-wrap .paging ul li.prev a,
 .notice-wrap .paging ul li.next a{ text-indent: -99999px; }
 .notice-wrap .paging ul li.prev a{ background: #ffffff url('../images/icon_paging_prev.png') no-repeat center; }
