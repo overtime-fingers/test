@@ -14,9 +14,8 @@
     <link href="web/css/contents.css" rel="stylesheet" type="text/css">
 
     <!-- js -->
-    <!-- <script src="web/js/jquery-3.4.1.js"></script>
+    <script src="web/js/jquery-3.4.1.js"></script>
     <script src="web/js/script.js"></script>
-    <script src="web/js/swiper.min.js"></script> -->
     
 </head>
 <body>
@@ -91,7 +90,7 @@
                         </td>
                         <td>
                             <p class="date">5</p>
-                            <button class="defer">수업연기신청</button>
+                            <button class="defer" onclick="openPop('deferPop');">수업연기신청</button>
                         </td>
                         <td><p class="date">6</p></td>
                         <td><p class="date">7</p></td>
@@ -152,29 +151,29 @@
                             <tr>
                                 <th>수업일자</th>
                                 <th>선생님 코멘트</th>
-                                <th>선생님 코멘트</th>
+                                <th>녹화보기</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
                                 <td>2020년 4월 15일</td>
-                                <td><button class="comment"></button></td>
-                                <td><button class="recording"></button></td>
+                                <td><button class="comment" onclick="openPop('commentPoP');"></button></td>
+                                <td><button class="recording" onclick="openPop('recordingPoP');"></button></td>
                             </tr>
                             <tr>
                                 <td>2020년 4월 15일</td>
-                                <td><button class="comment"></button></td>
-                                <td><button class="recording"></button></td>
+                                <td><button class="comment" onclick="openPop('commentPoP');"></button></td>
+                                <td><button class="recording" onclick="openPop('recordingPoP');"></button></td>
                             </tr>
                             <tr>
                                 <td>2020년 4월 15일</td>
-                                <td><button class="comment"></button></td>
-                                <td><button class="recording"></button></td>
+                                <td><button class="comment" onclick="openPop('commentPoP');"></button></td>
+                                <td><button class="recording" onclick="openPop('recordingPoP');"></button></td>
                             </tr>
                             <tr>
                                 <td>2020년 4월 15일</td>
-                                <td><button class="comment"></button></td>
-                                <td><button class="recording"></button></td>
+                                <td><button class="comment" onclick="openPop('commentPoP');"></button></td>
+                                <td><button class="recording" onclick="openPop('recordingPoP');"></button></td>
                             </tr>
                         </tbody>
                     </table>
@@ -266,6 +265,143 @@
             </div>
         </div>
     </div>
-    
+    <div class="popup" id="recordingPoP">
+        <div class="pop-header">
+            <p>녹화보기</p>
+            <button class="btn-close" onclick="closePop('recordingPoP');"></button>
+        </div>
+        <div class="pop-cont">
+            <div class="btn-wrap">
+                <button class="btn-play">수업보기</button>
+                <button class="btn-download">다운로드</button>
+            </div>
+            <div class="vedio-wrap">
+                
+            </div>
+        </div>
+    </div>
+    <div class="popup" id="deferPop">
+        <div class="pop-header">
+            <p>수업연기신청</p>
+            <button class="btn-close" onclick="closePop('deferPop');"></button>
+        </div>
+        <div class="pop-cont">
+            <h3>보강 원하는 날짜</h3>
+            <div class="date-search">
+                <div class="sel-wrap">
+                    <select name="" id="">
+                        <option value="">2020</option>
+                        <option value="">2020</option>
+                        <option value="">2020</option>
+                        <option value="">2020</option>
+                        <option value="">2020</option>
+                    </select>
+                    <span>년</span>
+                </div>
+                <div class="sel-wrap">
+                    <select name="" id="">
+                        <option value="">12</option>
+                        <option value="">11</option>
+                        <option value="">10</option>
+                        <option value="">09</option>
+                        <option value="">08</option>
+                    </select>
+                    <span>월</span>
+                </div>
+                <div class="sel-wrap">
+                    <select name="" id="">
+                        <option value="">31</option>
+                        <option value="">30</option>
+                        <option value="">29</option>
+                        <option value="">28</option>
+                        <option value="">27</option>
+                    </select>
+                    <span>일</span>
+                </div>
+                <button class="btn-search">검색</button>
+            </div>
+            <ul class="name-wrap">
+                <li><label for="name01"><input type="radio" name="name" id="name01" checked><span>Nikka(oz)</span></label></li>
+                <li><label for="name02"><input type="radio" name="name" id="name02"><span>Jenny (oz)</span></label></li>
+            </ul>
+            <ul class="time-wrap">
+                <li><label for="time01"><input type="radio" name="time" id="time01" checked><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+                <li><label for="time01"><input type="radio" name="time" id="time01"><span>06:00~06:20</span></label></li>
+            </ul>
+            <h3>연기 사유</h3>
+            <textarea name="" id=""></textarea>
+            <button class="btn-check" onclick="closePop('deferPop');">확인</button>
+        </div>
+    </div>
+    <div class="popup" id="commentPoP">
+        <div class="pop-header">
+            <p>선생님 코멘트</p>
+            <button class="btn-close" onclick="closePop('commentPoP');"></button>
+        </div>
+        <div class="pop-cont">
+            <h3>Daily Lesson</h3>
+            <p>RnB Book 6, Unit 2 p.16</p>
+            <h3>Daily Class Record</h3>
+            <p>
+                - Ice Breaker A -<br/>
+                Previous Score: 169<br/>
+                Todays Score: 1<br/>
+                Total: 170<br/><br/>
+                
+                Corrections:<br/><br/>
+                
+                Pronunciation/Intonation (발음/억양)<br/>
+                1. No pronunciation lapse. Great job!
+            </p>
+            <h3>Homework</h3>
+            <p>
+                Make a sentence using the following words.<br/>
+                1. worse<br/>
+                2. worst
+            </p>
+            <h3>Next Class Lesson</h3>
+            <p>
+                RnB Book 6, Unit 2 p.17
+            </p>
+            <h3>RnB Book 6, Unit 2 p.17</h3>
+            <p>
+                RnB Book 6, Unit 2 p.17
+            </p>
+        </div>
+    </div>
 </body>
 </html>
