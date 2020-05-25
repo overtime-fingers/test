@@ -144,7 +144,7 @@ h2.tit{ font-size: 40px; color: #111111; line-height: 1; padding-bottom: 15px; b
 .banner-wrap .swiper-slide::after{ display: block; clear: both; content:""; }
 .banner-wrap .swiper-slide .img-wrap{ position: absolute; left: 0; bottom: 0 }
 .banner-wrap .swiper-slide .cont-wrap{ position: absolute; right: 0; top: 50%; line-height: 1.2; transform: translateY(-50%); padding-left: 83px; box-sizing: border-box; width: calc(100% - 400px); color: #ffffff; }
-.banner-wrap .swiper-slide .cont-wrap h3{ font-size: 54px; margin-bottom: 20px; }
+.banner-wrap .swiper-slide .cont-wrap h3{ font-size: 54px; margin-bottom: 20px; letter-spacing: -4px; }
 .banner-wrap .swiper-slide .cont-wrap .txt-wrap::after{ display: block; clear: both; content:""; }
 .banner-wrap .swiper-slide .cont-wrap p{ float: left; font-size: 34px; }
 .banner-wrap .swiper-slide .cont-wrap .btn-wrap{ display: inline-block; margin-left: 34px; float: left; }
