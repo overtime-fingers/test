@@ -22,10 +22,12 @@
 #deferPop .pop-cont .date-search .sel-wrap{ float: left; margin-bottom: 0 }
 #deferPop .pop-cont .date-search .sel-wrap::after{ display: block; clear: both; content:""; }
 #deferPop .pop-cont .date-search .sel-wrap > *{ float: left; }
-#deferPop .pop-cont .date-search select{ width: 70px; box-sizing: border-box; height: 40px; border: 1px solid #a0a0a0; padding-right: 30px; background: #ffffff url('../images/icon_arrow_select.png') no-repeat 87% center; }
-#deferPop .pop-cont .date-search .sel-wrap:first-child select{ width: 90px; }
+#deferPop .pop-cont .date-search select{ width: calc(100% - 35px); box-sizing: border-box; height: 40px; border: 1px solid #a0a0a0; padding-right: 30px; background: #ffffff url('../images/icon_arrow_select.png') no-repeat 87% center; }
+#deferPop .pop-cont .date-search .sel-wrap:first-child{ width: calc(36.5% - 28px); }
+#deferPop .pop-cont .date-search .sel-wrap:nth-child(2){ width: calc(31.7% - 28px); }
+#deferPop .pop-cont .date-search .sel-wrap:nth-child(3){ width: calc(31.7% - 28px); }
 #deferPop .pop-cont .date-search span{ width: 35px; line-height: 40px; box-sizing: border-box; padding-left: 8px; display: block; font-size: 14px; }
-#deferPop .pop-cont .date-search button{ box-sizing: border-box; background: url('../images/icon_search.png') no-repeat 13px center; border: 2px solid #c26215; line-height: 36px; height: 40px; width: 80px; text-align: left; color: #c26215; padding-left: 33px; font-weight: 900; margin-left: 5px; border-radius: 20px; }
+#deferPop .pop-cont .date-search button{ box-sizing: border-box; background: url('../images/icon_search.png') no-repeat 13px center; border: 2px solid #c26215; line-height: 36px; height: 40px; width: 80px; text-align: left; color: #c26215; padding-left: 33px; font-weight: 900; margin-left: 4px; border-radius: 20px; }
 #deferPop .pop-cont .name-wrap{ margin-bottom: 35px; }
 #deferPop .pop-cont .name-wrap::after,
 #deferPop .pop-cont .time-wrap::after{ display: block; clear: both; content:""; }
@@ -170,8 +172,9 @@
 
     #deferPop .pop-cont .date-search{ margin-bottom: 20px; }
     #deferPop .pop-cont .date-search select{ width: calc(100% - 23px); }
-    #deferPop .pop-cont .date-search .sel-wrap{ width: 33.3333% }
-    #deferPop .pop-cont .date-search .sel-wrap:first-child select{ width: calc(100% - 23px); }
+    #deferPop .pop-cont .date-search .sel-wrap:first-child,
+    #deferPop .pop-cont .date-search .sel-wrap:nth-child(2),
+    #deferPop .pop-cont .date-search .sel-wrap:nth-child(3){ width: 33.3333% }
     #deferPop .pop-cont .date-search span{ width: 23px; font-size: 10px; }
     #deferPop .pop-cont .name-wrap{ margin-bottom: 20px; }
     #deferPop .pop-cont .name-wrap li{ min-width: 95px; }
