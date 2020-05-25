@@ -127,7 +127,7 @@
 .notice-wrap .paging{ text-align: center; }
 .notice-wrap .paging ul li{ display: inline-block; width: 25px; height: 25px; }
 .notice-wrap .paging ul li + li{ margin-left: -4px; }
-.notice-wrap .paging ul li a{ width: 25px; height: 25px; line-height: 25px; text-align: center; display: block; background: #fff; font-size: 12px; color: #313131; font-weight: 700; }
+.notice-wrap .paging ul li a{ width: 25px; height: 25px; line-height: 25px; text-align: center; display: block; background: #fff; font-size: 14px; color: #313131; font-weight: 700; }
 .notice-wrap .paging ul li.prev a,
 .notice-wrap .paging ul li.next a{ text-indent: -99999px; }
 .notice-wrap .paging ul li.prev a{ background: #ffffff url('../images/icon_paging_prev.png') no-repeat center; }
@@ -162,13 +162,13 @@
     .popup .pop-header p{ font-size: 20px; }
     .popup .pop-header .btn-close{ margin-top: 12px; }
     .popup .pop-cont{ max-height: calc(100vh - 62px);  }
-    .popup h3{ font-size: 15px; border-bottom: 2px solid #59493f; }
+    .popup h3{ font-size: 16px; border-bottom: 2px solid #59493f; }
 
     #recordingPoP .pop-cont .btn-wrap [class^="btn-"]{ line-height: 26px; font-size: 12px; height: 30px; padding: 0 12px 0 30px; margin-bottom: 10px; }
     #recordingPoP .pop-cont .btn-wrap .btn-play { background: url('../images/icon_play.png') no-repeat 11px center; background-size: 13px; }
     #recordingPoP .pop-cont .btn-wrap .btn-download { background: url('../images/icon_download.png') no-repeat 11px center; background-size: 10px; margin-left: 10px; }
 
-    #commentPoP .pop-cont p{ font-size: 12px; margin-bottom: 27px; }
+    #commentPoP .pop-cont p{ margin-bottom: 27px; }
 
     #deferPop .pop-cont .date-search{ margin-bottom: 20px; }
     #deferPop .pop-cont .date-search select{ width: calc(100% - 23px); }
@@ -181,20 +181,20 @@
     #deferPop .pop-cont .name-wrap li label{ padding-left: 25px; line-height: 20px; font-size: 14px; }
     #deferPop .pop-cont .time-wrap li{ width: 50% }
     #deferPop .pop-cont .time-wrap li label{ padding-left: 25px; line-height: 20px; font-size: 14px; }
-    #deferPop .pop-cont .date-search button{ float: none; margin-left: 0; width: 100%; margin-top: 10px; text-align: center; padding-left: 0; background: url('../images/icon_search.png') no-repeat 38% center; }
-    #deferPop .pop-cont .btn-check{ width: 110px; height: 30px; line-height: 30px; font-size: 12px; }
+    #deferPop .pop-cont .date-search button{ float: none; margin-left: 0; width: 100%; margin-top: 10px; text-align: center; padding-left: 0; background: url('../images/icon_search.png') no-repeat 38% center; font-size: 12px; }
+    #deferPop .pop-cont .btn-check{ width: 110px; height: 30px; line-height: 30px; }
 
     .util-wrap{ padding: 15px 15px; margin-bottom: 25px; }
     .util-wrap .profile{ width: 45px; height: 45px; }
     .util-wrap .user-data{ padding-left: 10px; }
-    .util-wrap .user-data p{ font-size: 10px; line-height: 20px; margin-bottom: 0; }
+    .util-wrap .user-data p{ font-size: 12px; line-height: 20px; margin-bottom: 0; }
     .util-wrap .user-data p span{ font-size: 18px; line-height: 20px; }
     .util-wrap .user-data button{ line-height: 20px; font-size: 10px; padding: 0 23px; }
-    .util-wrap .btn-follow{ line-height: 28px; width: 140px; font-size: 12px; padding-left: 20px; }
-    .util-wrap .btn-follow img{ left: 84px; width: 42px; }
+    .util-wrap .btn-follow{ line-height: 28px; width: 145px; font-size: 14px; padding-left: 20px; }
+    .util-wrap .btn-follow img{ left: 91px; width: 42px; }
 
     .cont-box{ padding-left: 10px; padding-right: 10px; }
-    .cont-box .cont-tit{ font-size: 20px; }
+    .cont-box .cont-tit{ font-size: 22px; }
     .cont-box .cont-tit button{ font-size: 12px; line-height: 25px; padding: 0 18px; }
     .cont-box .txt{ font-size: 12px; }
 
