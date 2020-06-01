@@ -1,81 +1,43 @@
-/* NotoSansKR */
+/* NanumBarunGothic */
 @font-face { 
-    font-family: 'NotoSansKR'; 
+    font-family: 'NanumBarunGothic'; 
     font-weight: 100; 
     src:
-        url('../font/NotoSansKR/NotoSansKR-Thin.eot?#iefix') format('embedded-opentype'),
-        url('../font/NotoSansKR/NotoSansKR-Thin.otf') format('opentype'),
-        url('../font/NotoSansKR/NotoSansKR-Thin.woff') format('woff'),
-        url('../font/NotoSansKR/NotoSansKR-Thin.woff2') format('woff2'),
-        url('../font/NotoSansKR/NotoSansKR-Thin.ttf') format('truetype'),
-        url('../font/NotoSansKR/NotoSansKR-Thin.svg#NotoSansKR-Thin') format('svg');
+        url('../font/NanumBarunGothic/NanumBarunGothicUltraLight.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumBarunGothic/NanumBarunGothicUltraLight.otf') format('opentype'),
+        url('../font/NanumBarunGothic/NanumBarunGothicUltraLight.woff') format('woff'),
+        url('../font/NanumBarunGothic/NanumBarunGothicUltraLight.ttf') format('truetype'),
+        url('../font/NanumBarunGothic/NanumBarunGothicUltraLight.svg#NanumBarunGothicUltraLight') format('svg');
 }
 @font-face { 
-    font-family: 'NotoSansKR'; 
+    font-family: 'NanumBarunGothic'; 
     font-weight: 300; 
     src:
-        url('../font/NotoSansKR/NotoSansKR-Light.eot?#iefix') format('embedded-opentype'),
-        url('../font/NotoSansKR/NotoSansKR-Light.otf') format('opentype'),
-        url('../font/NotoSansKR/NotoSansKR-Light.woff') format('woff'),
-        url('../font/NotoSansKR/NotoSansKR-Light.woff2') format('woff2'),
-        url('../font/NotoSansKR/NotoSansKR-Light.ttf') format('truetype'),
-        url('../font/NotoSansKR/NotoSansKR-Light.svg#NotoSansKR-Light') format('svg');
+        url('../font/NanumBarunGothic/NanumBarunGothicLight.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumBarunGothic/NanumBarunGothicLight.otf') format('opentype'),
+        url('../font/NanumBarunGothic/NanumBarunGothicLight.woff') format('woff'),
+        url('../font/NanumBarunGothic/NanumBarunGothicLight.ttf') format('truetype'),
+        url('../font/NanumBarunGothic/NanumBarunGothicLight.svg#NanumBarunGothicLight') format('svg');
 }
 @font-face { 
-    font-family: 'NotoSansKR'; 
+    font-family: 'NanumBarunGothic'; 
     font-weight: 400; 
     src:
-        url('../font/NotoSansKR/NotoSansKR-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../font/NotoSansKR/NotoSansKR-Regular.otf') format('opentype'),
-        url('../font/NotoSansKR/NotoSansKR-Regular.woff') format('woff'),
-        url('../font/NotoSansKR/NotoSansKR-Regular.woff2') format('woff2'),
-        url('../font/NotoSansKR/NotoSansKR-Regular.ttf') format('truetype'),
-        url('../font/NotoSansKR/NotoSansKR-Regular.svg#NotoSansKR-Regular') format('svg');
+        url('../font/NanumBarunGothic/NanumBarunGothic.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumBarunGothic/NanumBarunGothic.otf') format('opentype'),
+        url('../font/NanumBarunGothic/NanumBarunGothic.woff') format('woff'),
+        url('../font/NanumBarunGothic/NanumBarunGothic.ttf') format('truetype'),
+        url('../font/NanumBarunGothic/NanumBarunGothic.svg#NanumBarunGothic') format('svg');
 }
 @font-face { 
-    font-family: 'NotoSansKR'; 
-    font-weight: 500; 
-    src:
-        url('../font/NotoSansKR/NotoSansKR-Medium.eot?#iefix') format('embedded-opentype'),
-        url('../font/NotoSansKR/NotoSansKR-Medium.otf') format('opentype'),
-        url('../font/NotoSansKR/NotoSansKR-Medium.woff') format('woff'),
-        url('../font/NotoSansKR/NotoSansKR-Medium.woff2') format('woff2'),
-        url('../font/NotoSansKR/NotoSansKR-Medium.ttf') format('truetype'),
-        url('../font/NotoSansKR/NotoSansKR-Medium.svg#NotoSansKR-Medium') format('svg');
-}
-@font-face { 
-    font-family: 'NotoSansKR'; 
+    font-family: 'NanumBarunGothic'; 
     font-weight: 700; 
     src:
-        url('../font/NotoSansKR/NotoSansKR-Bold.eot?#iefix') format('embedded-opentype'),
-        url('../font/NotoSansKR/NotoSansKR-Bold.otf') format('opentype'),
-        url('../font/NotoSansKR/NotoSansKR-Bold.woff') format('woff'),
-        url('../font/NotoSansKR/NotoSansKR-Bold.woff2') format('woff2'),
-        url('../font/NotoSansKR/NotoSansKR-Bold.ttf') format('truetype'),
-        url('../font/NotoSansKR/NotoSansKR-Bold.svg#NotoSansKR-Bold') format('svg');
-}
-@font-face { 
-    font-family: 'NotoSansKR'; 
-    font-weight: 900; 
-    src:
-        url('../font/NotoSansKR/NotoSansKR-Black.eot?#iefix') format('embedded-opentype'),
-        url('../font/NotoSansKR/NotoSansKR-Black.otf') format('opentype'),
-        url('../font/NotoSansKR/NotoSansKR-Black.woff') format('woff'),
-        url('../font/NotoSansKR/NotoSansKR-Black.woff2') format('woff2'),
-        url('../font/NotoSansKR/NotoSansKR-Black.ttf') format('truetype'),
-        url('../font/NotoSansKR/NotoSansKR-Black.svg#NotoSansKR-Black') format('svg');
-}
-
-/* YesevaOne */
-@font-face { 
-    font-family: 'YesevaOne'; 
-    src:
-        url('../font/YesevaOne/YesevaOne-Regular.eot?#iefix') format('embedded-opentype'),
-        url('../font/YesevaOne/YesevaOne-Regular.otf') format('opentype'),
-        url('../font/YesevaOne/YesevaOne-Regular.woff') format('woff'),
-        url('../font/YesevaOne/YesevaOne-Regular.woff2') format('woff2'),
-        url('../font/YesevaOne/YesevaOne-Regular.ttf') format('truetype'),
-        url('../font/YesevaOne/YesevaOne-Regular.svg#YesevaOne-Regular') format('svg');
+        url('../font/NanumBarunGothic/NanumBarunGothicBold.eot?#iefix') format('embedded-opentype'),
+        url('../font/NanumBarunGothic/NanumBarunGothicBold.otf') format('opentype'),
+        url('../font/NanumBarunGothic/NanumBarunGothicBold.woff') format('woff'),
+        url('../font/NanumBarunGothic/NanumBarunGothicBold.ttf') format('truetype'),
+        url('../font/NanumBarunGothic/NanumBarunGothicBold.svg#NanumBarunGothicBold') format('svg');
 }
 
 html, body, div, span, applet, object, iframe,
@@ -112,9 +74,9 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body{
-    font-family: 'NotoSansKR', sans-serif;
+    font-family: 'NanumBarunGothic', sans-serif;
     font-weight: 400;
-    color: #212121;
+    color: #828282;
     line-height: 1.5;
 }
 
