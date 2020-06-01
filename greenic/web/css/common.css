@@ -10,7 +10,7 @@
 .header ul li a:hover{ color: #FFBC6A; }
 .header ul li:last-child a{ padding-right: 0; }
 
-.footer{ background: #549054; padding: 40px 0 }
+.footer{ background: #549054; padding: 30px 0 }
 .footer .comapny,
 .footer .sns,
 .footer .footer-menu{ float: left; width: 33.3333%; box-sizing: border-box; }
