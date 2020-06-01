@@ -15,5 +15,6 @@ $(document).ready(function(){
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        simulateTouch : false
       });
 });
