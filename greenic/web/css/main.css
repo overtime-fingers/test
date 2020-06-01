@@ -52,8 +52,8 @@
 .main .photozone p{ font-size: 20px; line-height: 1.35; text-align: justify; }
 .main .photozone .l-wrap .event-wrap::after{ display: block; clear: both; content:""; }
 .main .photozone .l-wrap .event-wrap > *{ float: left; }
-.main .photozone .l-wrap .event-wrap p{ width: calc(100% - 263px); padding-right: 50px; box-sizing: border-box; text-align: justify; }
-.main .photozone .l-wrap .event-wrap img{ width: 263px; }
+.main .photozone .l-wrap .event-wrap p{ width: calc(100% - 280px); padding-right: 32px; box-sizing: border-box; text-align: justify; }
+.main .photozone .l-wrap .event-wrap img{ width: 280px; }
 .main .photozone .r-wrap{ text-align: right; }
 .main .photozone .r-wrap img{ width: 387px; }
 
