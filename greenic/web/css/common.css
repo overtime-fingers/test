@@ -1,7 +1,7 @@
 .container{ max-width: 1200px; margin: 0 auto; box-sizing: border-box; position: relative; }
 .container::after{ display: block; clear: both; content:""; }
 
-.header{ position: fixed; z-index: 9999; border-bottom: 1px solid #F3F3F3; height: 54px; width: 100%; padding: 0 58px; box-sizing: border-box; }
+.header{ position: fixed; z-index: 9999; border-bottom: 1px solid #F3F3F3; height: 54px; width: 100%; padding: 0 58px; box-sizing: border-box; background: #549054; }
 .header h1{ width: 164px; height: 42px; background: url('../images/common/logo.png') no-repeat; background-size: 100%; margin-top: 6px; display: inline-block; }
 .header ul{ float: right; }
 .header ul::after{ display: block; clear: both; content:""; }
@@ -9,6 +9,16 @@
 .header ul li a{ font-size: 21px; color: #ffffff; line-height: 54px; height: 54px; display: block; padding: 0 29px; }
 .header ul li a:hover{ color: #FFBC6A; }
 .header ul li:last-child a{ padding-right: 0; }
+
+.footer{ background: #549054; padding: 40px 0 }
+.footer .comapny,
+.footer .sns,
+.footer .footer-menu{ float: left; width: 33.3333%; box-sizing: border-box; }
+.footer .sns,
+.footer .footer-menu{ border-left: 1px solid #ffffff; }
+.footer .comapny a{ color: #ffffff; display: block; }
+.footer .comapny ul::after{ display: block; clear: both; content:""; }
+.footer .comapny ul li{ float: left; }
 @media (max-width: 991px){
     
 }
