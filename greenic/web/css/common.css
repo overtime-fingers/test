@@ -3,12 +3,18 @@
 
 .header{ position: fixed; z-index: 9999; border-bottom: 1px solid #F3F3F3; height: 54px; width: 100%; padding: 0 58px; box-sizing: border-box; background: #549054; }
 .header h1{ width: 164px; height: 42px; background: url('../images/common/logo.png') no-repeat; background-size: 100%; margin-top: 6px; display: inline-block; }
-.header ul{ float: right; }
-.header ul::after{ display: block; clear: both; content:""; }
-.header ul li{ float: left; }
-.header ul li a{ font-size: 21px; color: #ffffff; line-height: 54px; height: 54px; display: block; padding: 0 29px; }
-.header ul li a:hover{ color: #FFBC6A; }
-.header ul li:last-child a{ padding-right: 0; }
+.header .main-paging{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+.header .main-paging::after{ display: block; clear: both; content:""; }
+.header .main-paging li{ float: left; position: relative; }
+.header .main-paging li + li{ margin-left: 40px; }
+.header .main-paging li + li::before{ width: 40px; height: 1px; background: #ffffff; position: absolute; display: block; content:""; left: 0; top: 50%; transform: translate(-100%, -50%); }
+.header .main-paging li a{ display: block; width: 12px; height: 12px; border-radius: 50%; background: #ffffff; }
+.header .menu-wrap{ float: right; }
+.header .menu-wrap::after{ display: block; clear: both; content:""; }
+.header .menu-wrap li{ float: left; }
+.header .menu-wrap li a{ font-size: 21px; color: #ffffff; line-height: 54px; height: 54px; display: block; padding: 0 29px; }
+.header .menu-wrap li a:hover{ color: #FFBC6A; }
+.header .menu-wrap li:last-child a{ padding-right: 0; }
 
 .footer{ background: #549054; padding: 30px 0 }
 .footer .comapny,

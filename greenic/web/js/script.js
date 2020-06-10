@@ -1,14 +1,5 @@
 $(document).ready(function(){
-    // $(window).scroll(function(){
-    //     var height = $(document).scrollTop();
-    //     if(height > 0){ 
-    //         $('.header').addClass('on');
-    //     }else if(height == 0){ 
-    //         $('.header').removeClass('on');
-    //     } 
-    // });
-
-    var swiper = new Swiper('.swiper-container', {
+    var randingSwiper = new Swiper('.branding .swiper-container', {
         slidesPerView: 4,
         spaceBetween: 28,
         navigation: {
@@ -16,5 +7,107 @@ $(document).ready(function(){
             prevEl: '.swiper-button-prev',
         },
         simulateTouch : false
+    });
+
+    var introSwiper = new Swiper('.intro-wrap .swiper-container', {
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+    });
+
+    var railRoSwiper = new Swiper('.rail-ro .swiper-container', {
+        slidesPerView: 2,
+        spaceBetween: 195,
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
       });
+
+    var packageSwiper = new Swiper('.package-wrap .swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+        },
+    });
+
+    $('a[href^="#"]').click(function () {
+        var target = this.hash,
+            $target = $(target);
+
+        $('html, body').animate( {
+        'scrollTop': $target.offset().top - 54
+        }, 900, 'swing', function () {
+        window.location.hash = target;
+        });
+    });
 });
+
+
+
+class TypeWriter {
+    constructor(txtElement, words, wait = 3000) {
+    this.txtElement = txtElement;
+    this.words = words;
+    this.txt = '';
+    this.wordIndex = 0;
+    this.wait = parseInt(wait, 10);
+    this.type();
+    this.isDeleting = false;
+    }
+
+    type() {
+    // Current index of word
+    const current = this.wordIndex % this.words.length;
+    // Get full text of current word
+    const fullTxt = this.words[current];
+
+    // Check if deleting
+    if(this.isDeleting) {
+        // Remove char
+        this.txt = fullTxt.substring(0, this.txt.length - 1);
+    } else {
+        // Add char
+        this.txt = fullTxt.substring(0, this.txt.length + 1);
+    }
+
+    // Insert txt into element
+    this.txtElement.innerHTML = `${this.txt}`;
+
+    // Initial Type Speed
+    let typeSpeed = 300;
+
+    if(this.isDeleting) {
+        typeSpeed /= 2;
+    }
+
+    // If word is complete
+    if(!this.isDeleting && this.txt === fullTxt) {
+        // Make pause at end
+        typeSpeed = this.wait;
+        // Set delete to true
+        this.isDeleting = true;
+    } else if(this.isDeleting && this.txt === '') {
+        this.isDeleting = false;
+        // Move to next word
+        this.wordIndex++;
+        // Pause before start typing
+        typeSpeed = 500;
+    }
+
+    setTimeout(() => this.type(), typeSpeed);
+    }
+}
+
+
+// Init On DOM Load
+document.addEventListener('DOMContentLoaded', init);
+
+// Init App
+function init() {
+    const txtElement = document.querySelector('.txt-type');
+    const words = JSON.parse(txtElement.getAttribute('data-words'));
+    const wait = txtElement.getAttribute('data-wait');
+    // Init TypeWriter
+    new TypeWriter(txtElement, words, wait);
+}
