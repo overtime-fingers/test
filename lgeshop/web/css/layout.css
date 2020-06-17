@@ -14,6 +14,18 @@
 .tab-content{ box-sizing: border-box; display: none; }
 .tab-content[data-tab="1"] { display: block; }
 
+/* dim */
+.dim{ position: fixed; width: 100%; height: 100vh; top: 0; left: 0; z-index: 100000; background: rgba(0, 0, 0, 0.5); }
+
+/* 팝업 */
+.popup{ position: fixed; z-index: 100001; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 100%; max-width: 860px; height: calc(100vh - 360px); display: none; }
+.popup.on{ display: block; }
+.popup .popup-header{ background: #ffffff; border-bottom: 1px solid #666666; padding: 20px 30px; box-sizing: border-box; width: 100%; }
+.popup .popup-header::after{ display: block; clear: both; content:""; }
+.popup .popup-header h1{ display: inline-block; font-size: 36px; }
+.popup .popup-header .btn-pop-close{ float: right; width: 28px; height: 28px; background: url('../images/common/btn_pop_close.png') no-repeat center; background-size: 100%; margin-top: 12px; }
+.popup .popup-cont{ height: 100%; max-height: calc(100% - 95px); overflow-y: auto; background: #ffffff; }
+
 /* list: 리뷰리스트 */
 .review-list::after{ display: block; content:""; clear: both; }
 .review-list li{ float: left; width: calc(25% - 15px); margin-top: 20px; }
@@ -39,6 +51,13 @@
     .container{ padding-left: 20px; padding-right: 20px; }
 
     .tab-btn li a{ font-size: 14px; padding: 12px 0; }
+    
+    /* 팝업 */
+    .popup{ top: 0; left: 0; transform: translate(0, 0); height: 100vh; width: 100%; max-width: 100%; }
+    .popup .popup-header{ padding: 10px 15px; }
+    .popup .popup-header h1{ font-size: 28px; }
+    .popup .popup-header .btn-pop-close{ width: 20px; height: 20px; }
+    .popup .popup-cont{ max-height: calc(100% - 63px); }
 
     .review-list li{ width: calc(50% - 5px); margin-top: 10px; }
     .review-list li + li{ margin-left: 10px; }

@@ -27,6 +27,7 @@
     
 </head>
 <body>
+    <!-- s: header -->
     <div class="header">
         <div class="util">
             <div class="container">
@@ -176,6 +177,8 @@
             </div>
         </div>
     </div>
+    <!-- //e: header -->
+    <!-- s: contents -->
     <div class="contents main">
         <div class="main-visual">
             <div class="slider-wrap">
@@ -767,6 +770,8 @@
             </div>
         </div>
     </div>
+    <!-- //e: contents -->
+    <!-- s: footer -->
     <div class="footer">
         <div class="sns">
             <div class="container">
@@ -800,6 +805,29 @@
                     </p>
                 </div>
             </div>
+        </div>
+    </div>
+    <!-- //e: footer -->
+    <!-- s: quick-menu -->
+    <div class="quick-menu">
+        <ul>
+            <li><a href="javascript:void(0);" class="btn-cart">장바<br/>구니<br/><span>(2)</span></a></li>
+            <li><a href="javascript:void(0);" class="btn-kakao">카카<br/>오톡</a></li>
+            <li><a href="javascript:void(0);" class="btn-sms">문자<br/>접수</a></li>
+            <li><a href="javascript:void(0);" class="btn-card" onclick="popOpen('popCard');dimMaker();bodyHidden();">카드<br/>혜택</a></li>
+        </ul>
+        <button class="btn-top">TOP</button>
+    </div>
+    <!-- //e: quick-menu -->
+
+    <!-- popup -->
+    <div class="popup" id="popCard">
+        <div class="popup-header">
+            <h1>카드혜택</h1>
+            <button class="btn-pop-close" onclick="popClose('popCard');dimRemove();bodyAuto();"></button>
+        </div>
+        <div class="popup-cont">
+            <img src="web/images/common/img_popup_card.png" alt="">
         </div>
     </div>
 </body>

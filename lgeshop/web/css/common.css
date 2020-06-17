@@ -80,6 +80,24 @@
 .footer .fb-wrap .company-data p{ font-size: 14px; line-height: 1.42; }
 .footer .fb-wrap .company-data p .copy{ font-size: 12px; }
 
+.quick-menu{ position: fixed; top: 190px; right: 50%; transform: translateX(50%); margin-right: -670px }
+.quick-menu ul{ width: 60px; border: 1px solid #dddddd; margin-bottom: 21px; box-sizing: border-box; }
+.quick-menu ul li a{ position: relative; text-align: center; display: block; line-height: 1.125; padding-bottom: 21px; }
+.quick-menu ul li a::after{ display: block; content:""; position: absolute; width: 37px; height: 1px; background: #dddddd; bottom: 0; left: 50%; transform: translateX(-50%); }
+.quick-menu ul li:last-child a::after{ display: none; }
+.quick-menu ul li a span{ color: #a1344a; }
+.quick-menu ul li a.btn-cart{ padding-top: 55px; background: #ffffff url('../images/common/btn_quick_cart.png') no-repeat center 18px; }
+.quick-menu ul li a.btn-kakao{ padding-top: 58px; background: #ffffff url('../images/common/btn_quick_kakaotalk.png') no-repeat center 22px; }
+.quick-menu ul li a.btn-sms{ padding-top: 53px; background: #ffffff url('../images/common/btn_quick_sms.png') no-repeat center 21px; }
+.quick-menu ul li a.btn-card{ padding-top: 48px; background: #ffffff url('../images/common/btn_quick_card.png') no-repeat center 21px; }
+.quick-menu .btn-top{ width: 60px; height: 60px; border-radius: 50%; background: #ffffff url('../images/common/btn_quick_top.png') no-repeat center top; text-indent: -9999px; }
+
+#popCard .popup-cont img{ width: auto; max-width: 100%; }
+
+@media all and (max-width: 1400px) {
+    .quick-menu{ display: none; }
+}
+
 @media all and (max-width: 1280px) {
     .header{ position: absolute; z-index: 9999; }
     .header .util{ background: none; height: 45px; }
@@ -142,6 +160,7 @@
     .footer .fb-wrap .cs{ float: none; width: 100%; text-align: center; border-bottom: 1px solid #444444; padding-bottom: 15px; }
     .footer .fb-wrap .cs .cs-txt01{ font-size: 16px; line-height: 33px; }
     .footer .fb-wrap .cs .cs-txt01 img{ width: 120px; margin-left: 10px; }
+    .footer .fb-wrap .company-data{ float: none; }
     .footer .fb-wrap .company-data ul{ text-align: center; margin-top: 25px; }
     .footer .fb-wrap .company-data ul li{ float: none; display: inline-block; }
     .footer .fb-wrap .company-data ul li + li{ margin-left: 13px; }
@@ -149,4 +168,6 @@
     .footer .fb-wrap .company-data p{ text-align: center; font-size: 12px; }
     .footer .fb-wrap .company-data p span{ text-indent: -9999px; display: block; line-height: 0; }
     .footer .fb-wrap .company-data p .copy{ text-indent: 0; line-height: 1.5; font-size: 10px; }
+
+    #popCard .popup-cont img{ width: 100%; }
 }
