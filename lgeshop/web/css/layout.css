@@ -1,0 +1,52 @@
+.container{ max-width: 1280px; width: 100%; margin-left: auto; margin-right: auto; padding-left: 40px; padding-right: 40px; box-sizing: border-box; }
+.container::after{ display: block; clear: both; content:""; }
+
+/* 텍스트 */
+.color-a1344a{ color: #a1344a !important; }
+
+/* 탭 */
+.tab-btn::after{ display: block; clear: both; content: ""; }
+.tab-btn li{ float: left; border: 1px solid #dddddd; box-sizing: border-box; background: #ffffff; }
+.tab-btn li + li{ margin-left: -1px; }
+.tab-btn li.on{ background: #333333; border: 1px solid #333333; }
+.tab-btn li a{ display: block; text-align: center; padding: 17px 0; font-weight: 300; color: #333333; }
+.tab-btn li.on a{ font-weight: 900; color: #ffffff; }
+.tab-content{ box-sizing: border-box; display: none; }
+.tab-content[data-tab="1"] { display: block; }
+
+/* list: 리뷰리스트 */
+.review-list::after{ display: block; content:""; clear: both; }
+.review-list li{ float: left; width: calc(25% - 15px); margin-top: 20px; }
+.review-list li + li{ margin-left: 20px; }
+.review-list li:nth-child(4n + 1){ margin-left: 0; }
+.review-list li a{ display: block; position: relative; padding-top: 100%; }
+.review-list li a > *{ position: absolute; }
+.review-list li a img{ top: 0; width: 100%; }
+.review-list li a .review-cont{ bottom: 0; background: rgba(51, 51, 51, 0.6); box-sizing: border-box; padding: 20px; color: #ffffff; width: 100%; }
+.review-list li a .review-cont h3{ font-weight: 700; font-size: 18px; line-height: 1.22; margin-bottom: 7px; }
+.review-list li a .review-cont p{ font-size: 14px; }
+.review-list li a .review-cont > p{ height: 44px; margin-bottom: 14px; line-height: 1.57; overflow: hidden; }
+.review-list li a .review-cont .review-data{ height: 18px; }
+.review-list li a .review-cont .review-data::after{ display: block; clear: both; content:""; }
+.review-list li a .review-cont .review-data > *{ float: left; }
+.review-list li a .review-cont .review-data .star-grade::after{ display: block; clear: both; content:""; }
+.review-list li a .review-cont .review-data .star-grade span{ width: 13px; height: 13px; background: url('../images/common/bg_star_off.png') no-repeat center; background-size: 100%; display: block; float: left; }
+.review-list li a .review-cont .review-data .star-grade span + span{ margin-left: 1px; }
+.review-list li a .review-cont .review-data .star-grade span.on{ background: url('../images/common/bg_star_on.png') no-repeat center; background-size: 100%; }
+.review-list li a .review-cont .review-data p{ line-height: 18px; height: 14px; float: left; margin-left: 10px; padding-left: 16px; border-left: 2px solid #ffffff; }
+
+@media all and (max-width: 1280px) {
+    .container{ padding-left: 20px; padding-right: 20px; }
+
+    .tab-btn li a{ font-size: 14px; padding: 12px 0; }
+
+    .review-list li{ width: calc(50% - 5px); margin-top: 10px; }
+    .review-list li + li{ margin-left: 10px; }
+    .review-list li:nth-child(4n + 1){ margin-left: 10px; }
+    .review-list li:nth-child(2n + 1){ margin-left: 0px; }
+    .review-list li a .review-cont{ padding: 10px 10px; }
+    .review-list li a .review-cont h3{ font-size: 16px; margin-bottom: 3px; height: 20px; overflow: hidden; }
+    .review-list li a .review-cont p{ font-size: 12px; }
+    .review-list li a .review-cont > p{ height: 38px; margin-bottom: 7px; }
+    .review-list li a .review-cont .review-data p{ margin-left: 5px; padding-left: 8px; border-left: 1px solid #ffffff; }
+}
