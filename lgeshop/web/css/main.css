@@ -33,7 +33,6 @@
 
 /* 맞춤제안 */
 .main .custom{ padding-top: 6px; background: #fafafa; border-top: 1px solid #dddddd; border-bottom: 1px solid #dddddd; padding-bottom: 40px; }
-.main .custom .tab-btn li{ width: calc(25% + 0.047em); }
 .main .custom .tab-content{ padding: 20px; }
 .main .custom .tab-content::after{ display: block; clear: both; content:""; }
 .main .custom .tab-content[data-tab="1"]{ background: url('../images/main/bg_custom01.png') no-repeat center right; background-size: 100%; }
@@ -98,7 +97,6 @@
 
 /* 리뷰 */
 .main .photo-review{ padding-bottom: 90px; background: #fafafa; border-top: 1px solid #dddddd; }
-.main .photo-review .tab-btn li{ width: calc(12.5% + 0.047em); }
 .main .photo-review .btn-review{ height: 60px; width: 387px; box-sizing: border-box; border: 2px solid #333333; line-height: 60px; text-align: center; font-size: 20px; display: block; margin: 30px auto 0; background: #ffffff url('../images/main/bg_btn_arr.png') no-repeat 358px center; }
 
 @media all and (max-width: 1280px) {
@@ -141,6 +139,7 @@
     .main .custom .tab-content .row2 .img-wrap + .img-wrap{ margin-top: 10px; }
 
     .main .best .slider-wrap .slider-item{ margin-bottom: 0; }
+    .main .best .slider-wrap .slider-item a::before{ width: 39px; height: 52px; }
     .main .best .slider-wrap .slider-item a .img-wrap{ height: 130px; margin-bottom: 10px; }
     .main .best .slider-wrap .slider-item a p{ font-size: 14px; }
 
@@ -149,8 +148,8 @@
     .main .banner-wrap .slider-item a{ height: auto; overflow: visible; }
     .main .banner-wrap .slider-item a img{ position: static; width: 100%; height: auto; transform: translate(0, 0); }
     .main .banner-wrap .slider-wrap .slick-dots{ top: 5px; }
-
-    .main .photo-review .tab-btn li{ width: calc(25% + 0.047em); margin-bottom: -0.031em }
-    .main .photo-review .tab-btn li:nth-child(4n + 1){ margin-left: 0; }
+    
     .main .photo-review .btn-review{ max-width: 387px; width: 100%; background: #ffffff url(../images/main/bg_btn_arr.png) no-repeat 95% center; font-size: 18px; line-height: 50px; height: 50px; }
+}
+@media all and (max-width: 640px) {
 }

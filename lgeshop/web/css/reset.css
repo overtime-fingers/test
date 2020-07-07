@@ -79,7 +79,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body{
-    font-family: 'LGSmHa', sans-serif;
+    font-family: 'LGSmHa', sans-serif !important;
     font-weight: 400;
     font-size: 16px;
     letter-spacing: -0.025em;
@@ -214,7 +214,7 @@ button,
 input,
 select,
 textarea {
-    /* font-size: 100%; */
+    font-size: 16px;
     margin: 0; /* 2 */
     vertical-align: baseline; /* 3 */
     *vertical-align: middle; /* 3 */
@@ -350,4 +350,20 @@ button{
     border: 0;
     padding: 0;
     background: none;
+    font-family: 'LGSmHa', sans-serif !important;
+}
+
+@media all and (max-width: 1280px) {
+    body{
+        font-size: 14px;
+    }
+    button,
+    input,
+    select,
+    textarea {
+        font-size: 14px;
+        margin: 0; /* 2 */
+        vertical-align: baseline; /* 3 */
+        *vertical-align: middle; /* 3 */
+    }
 }
