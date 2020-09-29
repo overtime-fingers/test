@@ -2794,7 +2794,7 @@ ul.list_txt.bul li::after {
 /* member ================================================== */
 /* member/로그인 */
 .login_wrap {
-  min-height: calc(100vh - 39px);
+  min-height: calc(100vh - 56px);
   background: #ffffff;
   margin-bottom: -39px;
 }
