@@ -1,0 +1,112 @@
+/* layout.scss */
+$baseWidth: 1400px;
+$borderColor: #efefef;
+
+@mixin clearfix {
+	&::after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin boxSet($padding: 20px 30px, $boxSizing: border-box, $border: 1px solid $borderColor, $backCol: #FFF) {
+	padding: $padding;
+	box-sizing: $boxSizing;
+	border: $border;
+	background-color: $backCol;
+}
+
+@mixin fontSet($size, $weight, $color) {
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+}
+
+@mixin filter-set() {
+	.bx_filter {
+		position:absolute;
+		&.top {
+			right:0;
+			top: -42px;
+		}
+		&.lft {
+			left:0;
+			top:0;
+			label {
+				&:first-child {
+					margin-top: 7px;
+				}
+				display: block;
+				margin-top: 10px;
+			}
+			.list_btn {
+				button {
+					width: 100%;
+					margin-bottom: 8px;
+					padding: 0 12px;
+					border: 1px solid #e1e1e1;
+					color: #222;
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+@mixin group-top-cnt(){
+	.group_top {
+		position: relative;
+		.bx_tit {
+			.thm {
+				vertical-align: middle;
+			}
+			.tit {
+				@include fontSet(16px, bold, #000);
+				margin-top: -2px;
+				margin-left: 6px;
+				vertical-align: middle;
+			}
+		}
+		.group_rgt {
+			position: absolute;
+			top: 0;
+			right: 0;
+			.cnt {
+				@include border-radius(15px);
+				@include fontSet(12px, bold, #FFF);
+
+				height: 15px;
+				line-height: 15px;
+				margin-top: 6px;
+				padding: 0 6px;
+			}
+		}
+	}
+}
+
+@mixin input($color: #222, $height: 48px, $font-size: 14px){
+	@include border-radius(3px);
+	height: $height;
+	color: $color;
+	font-size: $font-size
+}
+@mixin reset-button{
+	margin: 0;
+	padding: 0;
+}
+@mixin after{
+	&::after{
+		content:"";
+		display: block;
+		position: absolute;
+		@content;
+	}
+}

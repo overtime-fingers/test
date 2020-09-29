@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>KT BigSight TiMS AI 마케팅 솔루션</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1,maximum-scale=1.0,user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="../../assets/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../assets/css/tims.css">
+	<script src="../../assets/js/jquery-3.5.1.slim.min.js"></script>
+	<script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="../../assets/dist/js/bootstrap-datepicker.min.js"></script>
+	<script src="../../assets/js/common.js"></script>
+</head>
+
+<body>
+	<!-- container_tims -->
+	<div class="container_tims_m">
+		<!-- contents -->
+		<div class="contents">
+			<h2 class="tit_section">Member</h2>
+
+			<button type="button" class="btn_bdr" data-toggle="modal" data-target="#errorMatchLogin">아이디/비밀번호 일치하지 않음</button>
+			<button type="button" class="btn_bdr" data-toggle="modal" data-target="#errorNoneAcc1">등록된 계정이 없습니다</button>
+			<button type="button" class="btn_bdr" data-toggle="modal" data-target="#errorNoneAcc2">등록된 계정이 없습니다(ver.회원가입요구)</button>
+		</div>
+		<!-- //contents -->
+	</div>
+	<!-- //container_tims -->
+
+	<!-- Modal: 아이디/비밀번호 일치하지 않음 -->
+	<div class="modal fade" id="errorMatchLogin" tabindex="-1">
+		<div aria-expanded="true" role="dialog" aria-modal="true" class="vm--modal">
+			<div class="modal-dialog alert">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">닫기</button>
+					</div>
+					<div class="modal-body">
+						<div class="txt_vtc_cnt login">
+							<p class="txt">아이디/비밀번호가 일치하지 않습니다. <br>확인 후 다시 시도해주세요.</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn_bdr col4" data-dismiss="modal">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal: 아이디/비밀번호 일치하지 않음 -->
+
+	<!-- Modal: 등록된 계정이 없습니다 -->
+	<div class="modal fade" id="errorNoneAcc1" tabindex="-1">
+		<div aria-expanded="true" role="dialog" aria-modal="true" class="vm--modal">
+			<div class="modal-dialog alert">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">닫기</button>
+					</div>
+					<div class="modal-body">
+						<div class="txt_vtc_cnt login">
+							<p class="txt">등록된 계정이 없습니다</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn_bdr col4" data-dismiss="modal">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal: 등록된 계정이 없습니다 -->
+
+	<!-- Modal: 등록된 계정이 없습니다 -->
+	<div class="modal fade" id="errorNoneAcc2" tabindex="-1">
+		<div aria-expanded="true" role="dialog" aria-modal="true" class="vm--modal">
+			<div class="modal-dialog alert">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">닫기</button>
+					</div>
+					<div class="modal-body">
+						<div class="txt_vtc_cnt login">
+							<p class="txt">등록된 계정이 없습니다 <br>PC에서 회원가입 후 이용하실 수 있습니다.</p>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button class="btn_bdr col4" data-dismiss="modal">확인</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- //Modal: 등록된 계정이 없습니다 -->
+</body>
+</html>

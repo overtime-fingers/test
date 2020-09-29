@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<title>KT BigSight TiMS AI 마케팅 솔루션</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,minimum-scale=1,maximum-scale=1.0,user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="format-detection" content="telephone=no" />
+	<link rel="stylesheet" href="../../assets/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../assets/css/tims.css">
+	<script src="../../assets/js/jquery-3.5.1.slim.min.js"></script>
+	<script src="../../assets/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="../../assets/dist/js/bootstrap-datepicker.min.js"></script>
+	<script src="../../assets/js/common.js"></script>
+	<script>
+		$(document).ready(function(){
+			tooltipShow(); //툴팁
+			$('.date_picker').datepicker({ //날짜선택
+				format: "yyyy.mm.dd",
+				autoclose : true,
+				calendarWeeks : true,
+				daysOfWeekHighlighted : [6],
+				todayHighlight : true,
+				weekStart : 0,
+				language : "ko",
+				widgetPositioning: {
+					horizontal: 'right',
+					vertical: 'bottom'
+				}
+			});
+		});
+	</script>
+</head>
+
+<body>
+	<div class="container_tims">
+		<div class="section_dashboard_head">
+			<h1 class="logo">KT BigSight TiMs</h1>
+			<div class="user_wrap">
+				<p class="txt_user">안녕하세요<br><strong>Onsang001</strong>님</p>
+				<p class="txt_latest">최근 로그인 : 2020년 6월 26일 오후 3:00</p>
+				<button class="btn_logout">로그아웃</button>
+			</div>
+			<ul class="nav ty1">
+				<li class="nav-item"><a class="active" data-toggle="tab" href="#tab1">광고 성과 요약</a></li>
+				<li class="nav-item"><a data-toggle="tab" href="#tab2">관심 키워드 분석</a></li>
+			</ul>
+		</div>
+		<div class="contents">
+			<div class="tab-content">
+				<!-- tab1 -->
+				<div class="tab-pane fade show active" id="tab1">
+					<div class="tab_con">
+						<div class="today_wrap">
+							<div class="ad_result">
+								<p class="tit">오늘의 광고 성과 현황</p>
+								<p class="txt">총 예산은 10,260원 이며, <br>매출이 2<span class="txt_unit_per">%</span> 증가하였습니다.</p>
+							</div>
+						</div>
+						<div class="group_filter">
+							<div class="bx_period_unit">
+								<div class="rdo_group ty3" data-toggle="buttons">
+									<label class="btn active"><input type="radio" name="optionsA" checked="">1일</label>
+									<label class="btn"><input type="radio" name="optionsA">7일</label>
+									<label class="btn"><input type="radio" name="optionsA">30일</label>
+								</div>
+								<button type="button" class="btn_tooltip" data-toggle="tooltip" data-placement="top" title="" data-original-title="조회일 기준 D-1까지 집계된 데이터를 분석합니다." >툴팁</button>
+							</div>
+							<div class="bx_period_date">
+								<div class="date_wrap">
+									<input type="text" class="date_picker"><span> ~ </span><input type="text" class="date_picker">
+								</div>
+								<button class="btn_search">검색</button>
+							</div>
+						</div>
+						<div class="cont_wrap">
+							<div class="cont_row">
+								<div class="cont_col">
+									<div class="dsahboard_outcome_campaign">
+										<div class="group_top">
+											<div class="group_lft">
+												<h2 class="tit">집행중인 캠페인</h2>
+											</div>
+										</div>
+										<div class="group_con">
+											<dl class="bg_ic naver">
+												<dt>네이버</dt>
+												<dd><strong>20</strong>개</dd>
+											</dl>
+											<dl class="bg_ic insta">
+												<dt>인스타그램</dt>
+												<dd><strong>32</strong>개</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cont_row">
+								<div class="cont_col">
+									<div class="dsahboard_outcome_price">
+										<div class="group_top">
+											<div class="group_lft">
+												<h2 class="tit">기간예산</h2>
+											</div>
+										</div>
+										<div class="group_con">
+											<dl class="bg_ic execution">
+												<dt>집행 금액</dt>
+												<dd class="str"><strong>130,220</strong>원</dd>
+											</dl>
+											<dl>
+												<dt>기간예산</dt>
+												<dd class="str2"><strong>1,200,000</strong>원</dd>
+											</dl>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="cont_row">
+								<div class="cont_col">
+									<div class="dsahboard_outcome_stats">
+										<div class="group_top">
+											<div class="group_lft">
+												<h2 class="tit">광고현황</h2>
+											</div>
+										</div>
+										<div class="group_con">
+											<div class="click_wrap">
+												<dl class="bg_ic">
+													<dt>클릭 수</dt>
+													<dd><strong>1881</strong>번</dd>
+												</dl>
+												<dl>
+													<dt>클릭률</dt>
+													<dd><strong>0.28</strong>%</dd>
+												</dl>
+											</div>
+											<div class="exposure_wrap">
+												<dl class="bg_ic">
+													<dt>노출 수</dt>
+													<dd><strong>24</strong>M</dd>
+												</dl>
+												<dl>
+													<dt>CPC</dt>
+													<dd><strong>6,654</strong>원</dd>
+												</dl>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="cont_wrap">
+							<div class="cont_row">
+								<div class="cont_col">
+									<div class="dashboard_campaign_compare">
+										<div class="group_top">
+											<div class="group_lft">
+												<h4 class="tit">캠페인 성과 비교</h4>
+											</div>
+										</div>
+										<div class="group_con">
+											<div class="bx_filter">
+												<select>
+													<option>클릭률</option>
+													<option>노출 수</option>
+													<option>CPC</option>
+													<option>CPM</option>
+												</select>
+											</div>
+											<div class="bx_graph">
+												<!-- 그래프 사이즈 : 540px * 330px -->
+												<img src="../../assets/img/temp/dash_sum_graph_01.png" alt="">
+											</div>
+											<div class="bx_filter">
+												<div class="bx_set">
+													<button class="btn_setup"><span class="ic">설정</span>캠페인 설정</button>
+													<button class="btn_setup"><span class="ic">설정</span>내 데이터 설정</button>
+												</div>
+												<div class="list_btn">
+													<!--
+														Chart Legend Color Guide
+														* Chart Color 0 ~ 9 : .c_col0 ~ .c_col9
+														* 활성 클래스 : .active
+														* 비활성 클래스 : .inactive
+													-->
+													<button class="c_col0 active"><span class="ic"><img src="../../assets/img/dashboard/ci_naver_19.png" alt="Naver"></span>캠페인1</button>
+													<button class="c_col1 active"><span class="ic"><img src="../../assets/img/dashboard/ci_naver_19.png" alt="Naver"></span>캠페인1</button>
+													<button class="c_col2 active"><span class="ic"><img src="../../assets/img/dashboard/ci_naver_19.png" alt="Naver"></span>캠페인1</button>
+													<button class="c_col3 inactive"><span class="ic"><img src="../../assets/img/dashboard/ci_insta_19.png" alt="Naver"></span>캠페인1</button>
+													<button>내 데이터<a href="#none" class="btn_tooltip" data-toggle="tooltip" data-placement="right" title="내 데이터는 광고관리 > 광고 성과 분석 메뉴에서 업로드 하실 수 있습니다.">툴팁</a></button>
+	
+													<!-- 
+													<button class="c_col0 active"><span class="ic"><img src="../../assets/img/dashboard/ci_naver_19.png" alt="Naver"></span>캠페인1</button>
+	
+													<button class="c_col1 active"><span class="ic"><img src="../../assets/img/dashboard/ci_naver_19.png" alt="Naver"></span>캠페인1</button>
+													
+													<button class="c_col2 active"><span class="ic"><img src="../../assets/img/dashboard/ci_naver_19.png" alt="Naver"></span>캠페인1</button>
+	
+													<button class="c_col3 active"><span class="ic"><img src="../../assets/img/dashboard/ci_insta_19.png" alt="Naver"></span>캠페인1</button>
+	
+													<button class="c_col4 active"><span class="ic"><img src="../../assets/img/dashboard/ci_naver_19.png" alt="Naver"></span>캠페인1</button>
+	
+													<button class="c_col5 active"><span class="ic"><img src="../../assets/img/dashboard/ci_insta_19.png" alt="Naver"></span>캠페인1</button>
+	
+													<button class="c_col6 active"><span class="ic"><img src="../../assets/img/dashboard/ci_naver_19.png" alt="Naver"></span>캠페인1</button>
+	
+													<button class="c_col7 active"><span class="ic"><img src="../../assets/img/dashboard/ci_insta_19.png" alt="Naver"></span>캠페인1</button>
+	
+													<button class="c_col8 active"><span class="ic"><img src="../../assets/img/dashboard/ci_naver_19.png" alt="Naver"></span>캠페인1</button>
+	
+													<button class="c_col9 active"><span class="ic"><img src="../../assets/img/dashboard/ci_insta_19.png" alt="Naver"></span>캠페인1</button>
+													-->
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="cont_wrap">
+							<div class="cont_row">
+								<div class="cont_col">
+									<div class="dashboard_marketing_consulting">
+										<div class="group_top">
+											<div class="group_lft">
+												<h4 class="tit">TiMS Ai의 마케팅 컨설팅</h4>
+											</div>
+										</div>
+										<div class="group_con">
+											<div id="slideDashboardConsult" class="carousel slide" data-ride="carousel" data-interval="false">
+												<ol class="carousel-indicators">
+													<li data-target="#slideDashboardConsult" data-slide-to="0" class="active"></li>
+													<li data-target="#slideDashboardConsult" data-slide-to="1"></li>
+													<li data-target="#slideDashboardConsult" data-slide-to="2"></li>
+												</ol>
+												<div class="carousel-inner">
+													<div class="carousel-item active">
+														<div class="col_click_key">
+															<div class="bx_cont">
+																<p class="txt">진행중인 키워드 중 <br>‘반려견 치석제거 치약’의 <br>클릭률이 낮아요.</p>
+															</div>
+															<div class="bx_btm">
+																<span>키워드 변경 제안</span>
+																<span>연관 키워드로 설계를 변경해보세요.</span>
+															</div>
+														</div>
+													</div>
+													<div class="carousel-item">
+														<div class="col_click_count">
+															<div class="bx_cont">
+																<p class="txt">‘릴리스윗_파워링크_134’은(는)<br>클릭수에 비해 전환수가 낮습니다.</p>
+															</div>
+															<div class="bx_btm">
+																<span>렌딩페이지 수정 제안</span>
+																<span>랜딩페이지를 직관적으로 바꿔보세요. </span>
+															</div>
+														</div>
+													</div>
+													<div class="carousel-item">
+														<div class="col_click_efcc">
+															<div class="bx_cont">
+																<p class="txt">‘릴리스윗_파워링크_13413’의<br>광고 효율이 나쁘네요. </p>
+															</div>
+															<div class="bx_btm">
+																<span>검색 효율 저하 안내</span>
+																<span>광고비나 검색어 수를 축소하길 권장합니다. </span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="cont_wrap">
+							<div class="cont_row">
+								<div class="cont_col">
+									<div class="dashboard_channel_campaign">
+										<div class="group_top">
+											<div class="group_lft">
+												<h4 class="tit">채널 별 캠페인 현황</h4>
+											</div>
+										</div>
+										<div class="group_con">
+											<ul class="nav ty4">
+												<li class="nav-item"><a class="active" data-toggle="tab" href="#campaignNaver">네이버</a></li>
+												<li class="nav-item"><a data-toggle="tab" href="#campaignInstagram">인스타그램</a></li>
+											</ul>
+	
+											<div class="tab-content">
+												<!-- tab : 네이버 -->
+												<div class="tab-pane show active fade " id="campaignNaver">
+													<div class="cont_row">
+														<div class="cont_col">
+															<div class="dashboard_campaign_each naver">
+																<div class="group_top">
+																	<h4 class="bx_tit">
+																		<span class="thm"><img src="../../assets/img/dashboard/ci_naver_25.png" alt="NAVER"></span>
+																		<span class="tit">집행 중인 캠페인</span>
+																	</h4>
+																	<div class="group_rgt">
+																		<span class="cnt">2개</span>
+																	</div>
+																</div>
+																<div class="group_con">
+																	<div class="bx_filter">
+																		<select class="w_full">
+																			<option>네이버 캠페인 전체</option>
+																		</select>
+																	</div>
+																	<div class="bx_info">
+																		<dl>
+																			<dt>집행금액/예산</dt>
+																			<dd>2,500원/10,000원</dd>
+																			<dt><a href="#none" class="txt_str">클릭 수</a></dt>
+																			<dd><a href="#none" class="txt_str">699번</a></dd>
+																			<dt><a href="#none">클릭률</a></dt>
+																			<dd><a href="#none">0.22%</a></dd>
+																			<dt><a href="#none">노출 수</a></dt>
+																			<dd><a href="#none">23,422M</a></dd>
+																			<dt><a href="#none">CPC</a></dt>
+																			<dd><a href="#none">322원</a></dd>
+																			<dt>키워드 수</dt>
+																			<dd>12개</dd>
+																			<dt>평균 입찰가</dt>
+																			<dd>1,800원</dd>
+																		</dl>
+																	</div>
+																	<div class="bx_graph">
+																		<!-- 그래프 사이즈 : 243px * 100px -->
+																		<img src="../../assets/img/temp/dash_sum_graph_02.png" alt="">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- tab : 네이버 -->
+	
+												<!-- tab : 인스타그램 -->
+												<div class="tab-pane fade " id="campaignInstagram">
+													<div class="cont_row">
+														<div class="cont_col side">
+															<div class="dashboard_campaign_each insta">
+																<div class="group_top">
+																	<h4 class="bx_tit">
+																		<span class="thm"><img src="../../assets/img/dashboard/ci_insta_25.png" alt="instagram"></span>
+																		<span class="tit">집행 중인 캠페인</span>
+																	</h4>
+																	<div class="group_rgt">
+																		<span class="cnt">299개</span>
+																	</div>
+																</div>
+																<div class="group_con">
+																	<div class="bx_filter">
+																		<select class="w_full">
+																			<option>인스타그램 캠페인 전체</option>
+																		</select>
+																	</div>
+																	<div class="bx_info">
+																		<dl>
+																			<dt>집행금액/예산</dt>
+																			<dd>2,500원/10,000원</dd>
+																			<dt><a href="#none" class="txt_str">클릭 수</a></dt>
+																			<dd><a href="#none" class="txt_str">699번</a></dd>
+																			<dt><a href="#none">클릭률</a></dt>
+																			<dd><a href="#none">0.22%</a></dd>
+																			<dt><a href="#none">노출 수</a></dt>
+																			<dd><a href="#none">23,422M</a></dd>
+																			<dt><a href="#none">CPC</a></dt>
+																			<dd><a href="#none">322원</a></dd>
+																			<dt>키워드 수</dt>
+																			<dd><a href="#none">12개</a></dd>
+																		</dl>
+																	</div>
+																	<div class="bx_graph">
+																		<!-- 그래프 사이즈 : 243px * 100px -->
+																		<img src="../../assets/img/temp/dash_sum_graph_03.png" alt="">
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!-- tab : 인스타그램 -->
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //tab1 -->
+				<!-- tab2 -->
+				<div class="tab-pane fade " id="tab2">
+					<div class="tab_con">
+						<div class="today_wrap">
+							<div class="sns_trend">
+								<p class="tit">오늘의 SNS 트렌드</p>
+								<span class="cate">사고싶다 “컴퓨터”</span><span class="cate">먹고싶다 “차돌박이”</span><span class="cate">가고싶다 “제주도 애월해수욕장”</span>
+							</div>
+						</div>
+						<div class="group_filter">
+							<div class="bx_period_unit">
+								<div class="rdo_group ty3" data-toggle="buttons">
+									<label class="btn active"><input type="radio" name="optionsA" checked="">1일</label>
+									<label class="btn"><input type="radio" name="optionsA">7일</label>
+								</div>
+								<button type="button" class="btn_tooltip" data-toggle="tooltip" data-placement="right" title="" data-original-title="조회일 기준 D-1까지 집계된 데이터를 분석합니다.">툴팁</button>
+							</div>
+							<div class="bx_period_date">
+								<p class="txt_term">2020.06.01 ~ 2020.06.08</p>
+								<button class="btn_search">검색</button>
+							</div>
+						</div>
+						<div class="cont_wrap">
+							<div class="cont_row">
+								<div class="cont_col">
+									<div class="dashboard_trend_updw">
+										<div class="group_top">
+											<div class="group_lft">
+												<h4 class="tit">트렌드 Up &amp; Down</h4>
+											</div>
+										</div>
+										<ul class="nav ty4">
+											<li class="nav-item"><a data-toggle="tab" href="#trendChg1" class="active">사고싶다</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#trendChg2">가고싶다</a></li>
+											<li class="nav-item"><a data-toggle="tab" href="#trendChg3">먹고싶다</a></li>
+										</ul>
+	
+										<div class="tab-content">
+											<!-- tab : 사고싶다 -->
+											<div class="tab-pane show active fade " id="trendChg1">
+												<!--
+														trend updw button, list color change
+														* Up 일 경우 : .trend_updw_list.up
+														* Down 일 경우 : .trend_updw_list.dw
+													-->
+												<div class="trend_updw_list up">
+													<div class="updw_btn_wrap">
+														<button class="btn_updw_sorting up">Up<span class="ic">up</span></button>
+														<button class="btn_updw_sorting dw">Down<span class="ic">down</span></button>
+													</div>
+													<ul class="list_updw">
+														<li>에어팟 프로</li>
+														<li>아이패드 8세대</li>
+														<li>이케아 3단 서랍장</li>
+														<li>LG 트롬 워시타워</li>
+														<li>에어팟 프로</li>
+														<li>아이패드 8세대</li>
+														<li>이케아 3단 서랍장</li>
+														<li>LG 트롬 워시타워</li>
+														<li>에어팟 프로</li>
+														<li>아이패드 8세대</li>
+													</ul>
+												</div>
+											</div>
+											<!-- tab : 사고싶다 -->
+	
+											<!-- tab : 가고싶다 -->
+											<div class="tab-pane show" id="trendChg2">
+												<!--
+													trend updw button, list color change
+													* Up 일 경우 : .trend_updw_list.up
+													* Down 일 경우 : .trend_updw_list.dw
+												-->
+												<div class="trend_updw_list up">
+													<div class="updw_btn_wrap">
+														<button class="btn_updw_sorting up">Up<span class="ic">up</span></button>
+														<button class="btn_updw_sorting dw">Down<span class="ic">down</span></button>
+													</div>
+													<ul class="list_updw">
+														<li>에어팟 프로</li>
+														<li>아이패드 8세대</li>
+														<li>이케아 3단 서랍장</li>
+														<li>LG 트롬 워시타워</li>
+														<li>에어팟 프로</li>
+														<li>아이패드 8세대</li>
+														<li>이케아 3단 서랍장</li>
+														<li>LG 트롬 워시타워</li>
+														<li>에어팟 프로</li>
+														<li>아이패드 8세대</li>
+													</ul>
+												</div>
+											</div>
+											<!-- //tab : 가고싶다 -->
+	
+											<!-- tab : 먹고싶다 -->
+											<div class="tab-pane show" id="trendChg3">
+												<!--
+													trend updw button, list color change
+													* Up 일 경우 : .trend_updw_list.up
+													* Down 일 경우 : .trend_updw_list.dw
+												-->
+												<div class="trend_updw_list up">
+													<div class="updw_btn_wrap">
+														<button class="btn_updw_sorting up">Up<span class="ic">up</span></button>
+														<button class="btn_updw_sorting dw">Down<span class="ic">down</span></button>
+													</div>
+													<ul class="list_updw">
+														<li>에어팟 프로</li>
+														<li>아이패드 8세대</li>
+														<li>이케아 3단 서랍장</li>
+														<li>LG 트롬 워시타워</li>
+														<li>에어팟 프로</li>
+														<li>아이패드 8세대</li>
+														<li>이케아 3단 서랍장</li>
+														<li>LG 트롬 워시타워</li>
+														<li>에어팟 프로</li>
+														<li>아이패드 8세대</li>
+													</ul>
+												</div>
+											</div>
+											<!-- //tab : 먹고싶다 -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="cont_wrap">
+							<div class="cont_row">
+								<div class="cont_col">
+									<div class="group_top">
+										<div class="group_lft">
+											<h4 class="tit">트렌드 Top 30</h4>
+										</div>
+									</div>
+									<ul class="nav ty4">
+										<li class="nav-item"><a data-toggle="tab" href="#trendTop1" class="active">사고싶다</a></li>
+										<li class="nav-item"><a data-toggle="tab" href="#trendTop2">가고싶다</a></li>
+										<li class="nav-item"><a data-toggle="tab" href="#trendTop3">먹고싶다</a></li>
+									</ul>
+
+									<div class="tab-content">
+										<!-- tab : 사고싶다 -->
+										<div class="tab-pane show active fade " id="trendTop1">
+											<div class="dashboard_trend_lank">
+												<div class="group_top">
+													<h4 class="tit">사고싶다 Top 30</h4>
+												</div>
+												<div class="group_con">
+													<ol>
+														<li><span class="num">1</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">2</span><span class="tit">버즈플러스 버즈플러스 버즈플러스 버즈플러스</span></li>
+														<li><span class="num">3</span><span class="tit">LG TV</span></li>
+														<li><span class="num">4</span><span class="tit">LG 트롬 워시타워</span></li>
+														<li><span class="num">5</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">6</span><span class="tit">버즈플러스</span></li>
+														<li><span class="num">7</span><span class="tit">LG TV</span></li>
+														<li><span class="num">8</span><span class="tit">LG 트롬 워시타워</span></li>
+														<li><span class="num">9</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">10</span><span class="tit">버즈플러스</span></li>
+														<li><span class="num">11</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">12</span><span class="tit">버즈플러스</span></li>
+														<li><span class="num">13</span><span class="tit">LG TV</span></li>
+														<li><span class="num">14</span><span class="tit">LG 트롬 워시타워</span></li>
+														<li><span class="num">15</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">16</span><span class="tit">버즈플러스</span></li>
+													</ol>
+												</div>
+											</div>
+										</div>
+										<!-- tab : 사고싶다 -->
+
+										<!-- tab : 가고싶다 -->
+										<div class="tab-pane show" id="trendTop2">
+											<div class="dashboard_trend_lank">
+												<div class="group_top">
+													<h4 class="tit">사고싶다 Top 30</h4>
+												</div>
+												<div class="group_con">
+													<ol>
+														<li><span class="num">1</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">2</span><span class="tit">버즈플러스 버즈플러스 버즈플러스 버즈플러스</span></li>
+														<li><span class="num">3</span><span class="tit">LG TV</span></li>
+														<li><span class="num">4</span><span class="tit">LG 트롬 워시타워</span></li>
+														<li><span class="num">5</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">6</span><span class="tit">버즈플러스</span></li>
+														<li><span class="num">7</span><span class="tit">LG TV</span></li>
+														<li><span class="num">8</span><span class="tit">LG 트롬 워시타워</span></li>
+														<li><span class="num">9</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">10</span><span class="tit">버즈플러스</span></li>
+														<li><span class="num">11</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">12</span><span class="tit">버즈플러스</span></li>
+														<li><span class="num">13</span><span class="tit">LG TV</span></li>
+														<li><span class="num">14</span><span class="tit">LG 트롬 워시타워</span></li>
+														<li><span class="num">15</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">16</span><span class="tit">버즈플러스</span></li>
+													</ol>
+												</div>
+											</div>
+										</div>
+										<!-- //tab : 가고싶다 -->
+
+										<!-- tab : 먹고싶다 -->
+										<div class="tab-pane show" id="trendTop3">
+											<div class="dashboard_trend_lank">
+												<div class="group_top">
+													<h4 class="tit">사고싶다 Top 30</h4>
+												</div>
+												<div class="group_con">
+													<ol>
+														<li><span class="num">1</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">2</span><span class="tit">버즈플러스 버즈플러스 버즈플러스 버즈플러스</span></li>
+														<li><span class="num">3</span><span class="tit">LG TV</span></li>
+														<li><span class="num">4</span><span class="tit">LG 트롬 워시타워</span></li>
+														<li><span class="num">5</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">6</span><span class="tit">버즈플러스</span></li>
+														<li><span class="num">7</span><span class="tit">LG TV</span></li>
+														<li><span class="num">8</span><span class="tit">LG 트롬 워시타워</span></li>
+														<li><span class="num">9</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">10</span><span class="tit">버즈플러스</span></li>
+														<li><span class="num">11</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">12</span><span class="tit">버즈플러스</span></li>
+														<li><span class="num">13</span><span class="tit">LG TV</span></li>
+														<li><span class="num">14</span><span class="tit">LG 트롬 워시타워</span></li>
+														<li><span class="num">15</span><span class="tit">2019 맥북 16인치</span></li>
+														<li><span class="num">16</span><span class="tit">버즈플러스</span></li>
+													</ol>
+												</div>
+											</div>
+										</div>
+										<!-- //tab : 먹고싶다 -->
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- //tab2 -->
+			</div>
+		</div>
+	</div>
+	<div class="footer">
+		<p class="txt">KT 빅데이터 기반 최고의  AI 마케팅 통합관리 솔루션 BigSight TiMS</p>
+		<ul class="cs_wrap">
+			<li>고객센터 : 1522-0123</li>
+			<li>이메일 : help.tims@kt.com</li>
+		</ul>
+	</div>
+</body>
+</html>
